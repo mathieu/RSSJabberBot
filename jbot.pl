@@ -20,8 +20,8 @@ my $bot = Net::Jabber::Bot->new (
 	tls => 0 , # set to 1 for google
 	connection_type => 'tcpip' , 
 	port => 443 , 
-	username => 'mathieu.marache' , 
-	password => 'pirouli' , 
+	username => 'evebot' , 
+	password => 'evebot' , 
 	alias => 'evebot' , 
 #	message_function => \&new_bot_message , 
 #	background_function => \&background_checks , 
@@ -42,8 +42,6 @@ sub new_bot_message {
 sub background_checks {
 	
 };
-
-#$bot->JoinForum("eve");
 
 my @feeds = (
     {   url   => "http://10.3.3.49/eveBIM.xml",
